@@ -35,7 +35,7 @@ Sistema web desenvolvido para permitir que um professor realize login, cadastre 
 # 📁 Estrutura do Projeto
 
 ```text
-projeto full stack - escola/
+escola full stack/
 │
 ├── backend/
 │   ├── routes/
