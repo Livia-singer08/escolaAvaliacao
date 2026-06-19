@@ -1,0 +1,436 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1756465946326
+  modified: 1756465946326
+  description: ""
+collection:
+  - name: Aula 03 - Escola Full Stack
+    meta:
+      id: fld_bcaa9a307c9945f48ef0477d1674a5e8
+      created: 1781718881747
+      modified: 1781718881747
+      sortKey: -1781718881747
+      description: ""
+    children:
+      - name: Professor
+        meta:
+          id: fld_4908070e9b40458b921f00e339acb2d7
+          created: 1781718881752
+          modified: 1781718881752
+          sortKey: -1781718881752
+          description: ""
+        children:
+          - url: http://localhost:3000/professor/listar
+            name: Listar
+            meta:
+              id: req_56d3f5ac744743898d27777cbb298bff
+              created: 1781718881758
+              modified: 1781718881758
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881758
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professor/buscar/2
+            name: Buscar
+            meta:
+              id: req_2ad5bba6d8f44c85aac3087fb576114a
+              created: 1781718881763
+              modified: 1781868923225
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881763
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professor/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_3b849731d9ad4f6ab1476bd207b42975
+              created: 1781718881768
+              modified: 1781719525401
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881768
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nome": "Eliana Sambo",
+                  "email": "e.sambo@gmail.com",
+                  "senha": "senha753"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professor/atualizar/3
+            name: Atualizar
+            meta:
+              id: req_9b493218c5f44deb996b0edb6a561ec8
+              created: 1781718881774
+              modified: 1781719397771
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881774
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "email": "edilaine.bueno@gmail.com"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/professor/excluir/4
+            name: Excluir
+            meta:
+              id: req_2eb6d5fa37554652a5e7ed5cfeb65716
+              created: 1781718881779
+              modified: 1781719534417
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881779
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Turma
+        meta:
+          id: fld_9d16d4d4c3e84fb2b0a9fc6aa4737475
+          created: 1781718881784
+          modified: 1781718881784
+          sortKey: -1781718881784
+          description: ""
+        children:
+          - url: http://localhost:3000/turma/listar
+            name: Listar
+            meta:
+              id: req_e75fcd4ab505416cb002e7e731473fec
+              created: 1781718881790
+              modified: 1781869032832
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881790
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/turma/buscar/2
+            name: Buscar
+            meta:
+              id: req_c269b3e27f2a4de38e4ca395356ca343
+              created: 1781718881795
+              modified: 1781719574430
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881795
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/turma/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_970c152afb8846e39685324c46e1abde
+              created: 1781718881800
+              modified: 1781868867087
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881800
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nome": "Turma 6ºB",
+                  "professorId": 2
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/turma/atualizar/4
+            name: Atualizar
+            meta:
+              id: req_efaeea56de354b648140c8ae155f6003
+              created: 1781718881805
+              modified: 1781719606708
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881805
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "professorId": 1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/turma/excluir/1
+            name: Excluir
+            meta:
+              id: req_031bde7602ff41e1aa815af8cc740b6e
+              created: 1781718881811
+              modified: 1781719625967
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881811
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Atividade
+        meta:
+          id: fld_2af5237cea484e09a96129eff3683026
+          created: 1781718881816
+          modified: 1781718881816
+          sortKey: -1781718881816
+          description: ""
+        children:
+          - url: http://localhost:3000/atividade/listar
+            name: Listar
+            meta:
+              id: req_49b9b19f34f34d1897f59b5ee1f341b7
+              created: 1781718881821
+              modified: 1781718881821
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881821
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/atividade/buscar/3
+            name: Buscar
+            meta:
+              id: req_1914017708e54f408d6da4503297a9d0
+              created: 1781718881826
+              modified: 1781719767494
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881826
+            method: GET
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/atividade/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_62872c66b7ed4cfca187671ee8e1c56a
+              created: 1781718881832
+              modified: 1781719751401
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881832
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "descricao": "Atividades Escola Romantismo",
+                  "turmaId": 3
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/atividade/atualizar/2
+            name: Atualizar
+            meta:
+              id: req_07a67163fbf44c8c8f7b4e7f19007172
+              created: 1781718881837
+              modified: 1781868298203
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881837
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "descricao": "Tarefa: Resumo sobre Capitalismo"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/atividade/excluir/4
+            name: Excluir
+            meta:
+              id: req_2137d70be9da467397f094c5c82c0018
+              created: 1781718881842
+              modified: 1781719861538
+              isPrivate: false
+              description: ""
+              sortKey: -1781718881842
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: ""
+            headers:
+              - name: Content-Type
+                value: application/json
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466032600
+    modified: 1756466032600
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466032436
+    modified: 1756466032436
+    isPrivate: false

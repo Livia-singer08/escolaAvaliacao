@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu-lateral">
+
+        <h2>Escola</h2>
+
+        <a href="professor.html">
+            Turmas
+        </a>
+
+        <a href="atividade.html" class="ativo">
+            Atividades
+        </a>
+
+        <a href="#" onclick="logout()">
+            Sair
+        </a>
+
+    </nav>
+
+    <main class="conteudo">
+
+        <div class="cabecalho">
+
+            <div>
+
+                <h1 id="nomeTurma"></h1>
+
+                <p>
+                    Professor:
+                    <span id="nomeProfessor"></span>
+                </p>
+
+            </div>
+
+            <button
+                onclick="abrirCadastroAtividade()"
+                class="botao-principal">
+
+                + Nova Atividade
+
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Descrição</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="listaAtividades"></tbody>
+
+        </table>
+
+    </main>
+
+    <div id="modalAtividade" class="modal">
+
+        <div class="modal-conteudo">
+
+            <h3>Cadastro de Atividade</h3>
+
+            <div class="campo">
+
+                <label>Descrição</label>
+
+                <textarea
+                    id="descricaoAtividade">
+                </textarea>
+
+            </div>
+
+            <div class="botoes">
+
+                <button
+                    onclick="cadastrarAtividade()"
+                    class="botao-principal">
+
+                    Cadastrar
+
+                </button>
+
+                <button
+                    onclick="fecharCadastroAtividade()"
+                    class="botao-secundario">
+
+                    Voltar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

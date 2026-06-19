@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="menu-lateral">
+        <h2>Escola</h2>
+
+        <a href="professor.html" class="ativo">
+            Turmas
+        </a>
+
+        <a href="#" onclick="logout()">
+            Sair
+        </a>
+    </nav>
+
+    <main class="conteudo">
+
+        <div class="cabecalho">
+
+            <div>
+                <h1 id="nomeProfessor"></h1>
+                <p>Gerencie suas turmas</p>
+            </div>
+
+            <button
+                onclick="abrirCadastroTurma()"
+                class="botao-principal">
+
+                + Nova Turma
+
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>Turma</th>
+                    <th>Ações</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="listaTurmas"></tbody>
+
+        </table>
+
+    </main>
+
+    <div id="modalTurma" class="modal">
+
+        <div class="modal-conteudo">
+
+            <h3>Cadastro de Turma</h3>
+
+            <div class="campo">
+                <label>Nome da Turma</label>
+
+                <input
+                    type="text"
+                    id="nomeTurma">
+            </div>
+
+            <div class="botoes">
+
+                <button
+                    onclick="cadastrarTurma()"
+                    class="botao-principal">
+
+                    Cadastrar
+
+                </button>
+
+                <button
+                    onclick="fecharCadastroTurma()"
+                    class="botao-secundario">
+
+                    Voltar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
